@@ -8,7 +8,7 @@
 - Ability to add cards with YouTubers to favorites.
 - The possibility of changing the language from English to Ukrainian, and vice versa.
 - Ability to sort content by specific category.
-### Members:
+ ### Members:
 - [@Daniil0Yehorov](https://github.com/Daniil0Yehorov)
 - [@AndreyGordienkotut](https://github.com/AndreyGordienkotut)
 -------------------------------------------------------------------------------------------------------------------------------------------------------
