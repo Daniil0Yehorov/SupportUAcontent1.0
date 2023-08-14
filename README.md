@@ -8,7 +8,7 @@ Where did the idea come from:
 -
 -
 -
--
+
 Members:
 - [@Daniil0Yehorov](https://github.com/Daniil0Yehorov)
 - [@AndreyGordienkotut](https://github.com/AndreyGordienkotut)
