@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Підтримай український контент</title>
+</head>
+<body>
+<header>
+  <div class="nav1">
+  <h1 class="mainh1head"><a href="#" onclick="restart()">UkraineContentHub</a></h1>
+  </div>
+</header>
+<div class="ALLBUTTONS">
+  <button class="openclosefiltr">&#9776</button>
+  <button id="randomq" onclick="randomq()">Рандомний ютубер</button>
+  <button id="showALL" onclick="filtrIzbr()">Обрані ютубери</button>
+  <button  id="butchange" onclick="changeLanguage()">Translate into English</button>
+</div>
+<div class="containerALL">
+    <div class="nav_menu"> 
+      <ul class="category-list">
+        <li>
+          <a href="#" class="category-link" data-category="ALL" data-lang="uk" data-en="All content" data-uk="Весь контент"> Весь контент</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Game" data-lang="uk" data-en="Games" data-uk="Ігри">Ігри</a>
+          <ul class="subcategory-listhidden">
+            <li><a href="#" class="category-link" data-category="Game_news" data-lang="uk" data-en="Games news" data-uk="Новини ігор" >Новини ігор</a></li>
+            <li><a href="#" class="category-link" data-category="Genshin" data-lang="uk" data-en="Genshin" data-uk="Геншин">Геншин</a></li>
+            <li><a href="#" class="category-link" data-category="CSGO" data-lang="uk" data-en="cs:go" data-uk="КС:ГО">КС:ГО</a></li>
+            <li><a href="#" class="category-link" data-category="Minecraft" data-lang="uk" data-en="Minecraft" data-uk="Майнкрафт">Майнкрафт</a></li>
+          </ul>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link"  data-category="History" data-lang="uk" data-en="History" data-uk="Історія">Історія</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Humor" data-lang="uk" data-en="Humor" data-uk="Юмор">Юмор</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Music" data-lang="uk" data-en="Music" data-uk="Музика">Музика</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Films" data-lang="uk" data-en="Film" data-uk="Кіно">Кіно</a>     
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Politics"  data-lang="uk" data-en="Politics" data-uk="Політика">Політика</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="reviews" data-lang="uk" data-en="Review of gaming devices" data-uk="Обзо ігрових девайсів">Обзор ігрових девайсів</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Busines"  data-lang="uk" data-en="Busines" data-uk="Бізнес">Бізнес</a>
+        </li><hr>
+        <li>
+          <a href="#" class="category-link" data-category="Other"   data-lang="uk" data-en="Other" data-uk="Інше">Інше</a>
+        </li><hr>
+      </ul>
+    </div>
+  <div class="information">
+    <div data-category="History"  class="card" data-is-selected="false" data-card-id="1">
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/K4W79cBSN7XYijthoUC7lIBMzr389sVMCwUiYVKfIKPrFfwfE_aUlPVIcGlPRTjxn-REzr57LQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Чотири сторони</div>
+        <div class="card-description" data-lang="uk" data-en="Ukrainian-language channel about cities, countries and world politics." data-uk="Україномовний канал про міста, країни та світову політику.">Україномовний канал про міста, країни та світову політику.</div>
+      </div>
+      <div class="card-link">
+        <a href="https://www.youtube.com/@chotyrystorony" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        <a href="https://t.me/chotyrystorony" class="links" target="_blank">
+          <img src="/img/telegram.png" class="telegram" alt=""></a>
+      </div>
+    </div>
+    <div data-category="Game Genshin" class="card" data-is-selected="false" data-card-id="2">
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/oJXDwTgZ9EtLtlbc4Mciq2VFKkaKpnt0MMUnsYsQaHnN_6HoQqVlis2Wq8HRLkNbZkGSlRHWaIE=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Envy</div>
+        <div class="card-description" data-lang="uk" data-en="Ukrainian-language channel from Genshin Impact, which makes guides for both beginners and experienced players" data-uk="Україномовний канал із геншину, який робить гайди як для новачків так і для досвідчених гравців">Україномовний канал із геншину, який робить гайди як для новачків так і для досвідчених гравців</div>
+      </div>
+      <div class="card-link">
+        <a href="https://www.youtube.com/@Envy_UA/featured" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        <a href="https://t.me/xaoc_envy" class="links" target="_blank">
+          <img src="/img/telegram.png" class="telegram" alt=""></a>
+        <a href="https://discord.com/invite/VswmJEc5QB" class="links" target="_blank">
+          <img src="/img/disc.png" class="discord" alt=""></a>
+        <a href="https://www.twitch.tv/envy__toxic" class="links" target="_blank">
+          <img src="/img/twitch.png" class="twitch" alt=""></a>
+      </div>
+    </div>
+    <div data-category="Game Genshin" class="card" data-is-selected="false" data-card-id="3">
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/tmAkfBWJdjO4r9GvUv1UQ1jfPe8L4PGr-wp9ub5PT1sMromLY_j7itLGXbPD8scrjtev_k9jfQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Архонт Солі</div>
+        <div class="card-description" data-lang="uk" data-en="On this Ukrainian-language channel dedicated to the game Genshin Impact, you will find detailed guides for both beginners and experienced players who already know the game." data-uk="На цьому україномовному каналі, присвяченому грі 'Геншин Імпакт', ви знайдете детальні гайди, як для початківців, так і для вже знаючих гру досвідчених гравців.">На цьому україномовному каналі, присвяченому грі "Геншин Імпакт", ви знайдете детальні гайди, як для початківців, так і для вже знаючих гру досвідчених гравців.</div>
+      </div>
+      <div class="card-link">
+        <a href="https://www.youtube.com/@ArchonSoli/featured" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        <a href="https://discord.com/invite/zvAeyc9zaB" class="links" target="_blank">
+          <img src="/img/disc.png" class="discord" alt=""></a>
+      </div>
+    </div>
+    <div data-category="Game CSGO" class="card" data-is-selected="false" data-card-id="4">
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/x7r8L3iG5TExH-Qug0MAIhpf5KEeww3mT1H01GBY8_kibH5dO-KQwQRJHCEXbHJnfN536Mbi8Q=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Ухо</div>
+        <div class="card-description" data-lang="uk" data-en="On this channel, you will be able to enjoy the unparalleled commentary of professional player and commentator Oleksiy Maletskyi in the world of CS:GO. He talks about the highlights, strategies and subtle nuances of this fascinating discipline. Join and immerse yourself in the world of electronic sports with Maletsky!" 
+        data-uk="На цьому каналі ви зможете насолодитися неперевершеним коментуванням професійного гравця та коментатора Олексія Малецького у світі CS:GO. Він розповідає про найцікавіші моменти, стратегії та витончені нюанси цієї захоплюючої дисципліни. Приєднуйтесь та занурюйтеся у світ електронного спорту разом із Малецьким!">
+        На цьому каналі ви зможете насолодитися неперевершеним коментуванням професійного гравця та коментатора Олексія Малецького у світі CS:GO. Він розповідає про найцікавіші моменти, стратегії та витончені нюанси цієї захоплюючої дисципліни. Приєднуйтесь та занурюйтеся у світ електронного спорту разом із Малецьким!</div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@yxoky" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+            <a href="https://t.me/yxab7" class="links" target="_blank">
+              <img src="/img/telegram.png" class="telegram" alt=""></a>
+            <a href="https://www.twitch.tv/yxo7" class="links" target="_blank">
+              <img src="/img/twitch.png" class="twitch" alt=""></a>
+            <a href="https://www.instagram.com/yxo7/ " class="links" target="_blank">
+              <img src="/img/insta.png" class="instagram" alt=""></a>
+            <a href="https://twitter.com/yxo7 " class="links" target="_blank">
+              <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+     
+    </div>
+    <div data-category="Politics"class="card" data-is-selected="false" data-card-id="5"> 
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/5hMp7kvmr5grq2BYl5cV2AnD22vbvySdbl2w95XM-Zd8uGN9FaV70xiWtHPhhiipyaph4kEBog=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Dervit</div>
+        <div class="card-description" data-lang="uk" data-en="I make interesting videos in Ukrainian!
+        These include: ⬇️
+        - Reactions to zombie russians 🧟
+        - Interesting news
+        - Reviews of Russian propaganda
+        - Actual social topics" data-uk="Роблю цікаві відео українською мовою!
+        Сюди входять: ⬇️
+        - Реакції на zombie russians 🧟
+        - Цікаві новини
+        - Огляди російської пропаганди
+        - Актуальні соціальні теми">Роблю цікаві відео українською мовою!
+          Сюди входять: ⬇️
+          - Реакції на zombie russians 🧟
+          - Цікаві новини
+          - Огляди російської пропаганди
+          - Актуальні соціальні теми
+          </div>
+      </div>
+     <div class="card-link">
+      <a href="https://www.youtube.com/@dervit_/featured" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/dervitt" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          </div>
+  </div>
+    <div data-category="Game Game_news" class="card" data-is-selected="false" data-card-id="6">
+      <div class="favicon"> 
+        <img src="img/selected.png" class="selected"  alt="">
+        <img src="img/unselected.png" class="unselected"   alt="">
+      </div>
+      <div class="card-image">
+        <img src="https://yt3.googleusercontent.com/lv4QY-7wqQoT91S9lIDEBPocHmW4XJugLV5mmiDCbpJ0SHhzJEbri_259EH97zwUwY554PB_wQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+      </div>
+      <div class="card-content">
+        <div class="card-title">Good Game Gentelmen</div>
+        <div class="card-description" data-lang="uk" data-en="Good Game Gentlemen is a YouTube channel where we talk about e-sports and gaming in Ukrainian. Here you will find stories about the best players, the biggest scandals, legendary teams, their triumphs and failures. About games from childhood and hot new products, about Dota 2, CS GO, Valorant, Fifa and other cool titles." 
+        data-uk="Good Game Gentelmen - ютуб канал, де ми розповідаємо українською про кіберспорт та геймінг. У нас ви знайдете історії про найкращих гравців, найбільші скандали, легендарні команди їх тріумфи та провали. Про ігри з дитинста та гарячі новинки, про Dota 2, CS GO, Valorant, Fifa та інші круті тайтли.">
+        Good Game Gentelmen - ютуб канал, де ми розповідаємо українською про кіберспорт та геймінг. У нас ви знайдете історії про найкращих гравців, найбільші скандали, легендарні команди їх тріумфи та провали. Про ігри з дитинста та гарячі новинки, про Dota 2, CS GO, Valorant, Fifa та інші круті тайтли.</div>
+        
+      </div>
+      <div class="card-link">
+        <a href="https://www.youtube.com/@goodgamegentlemen/featured" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://www.instagram.com/goodgamegentlemen/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+      </div>
+      </div>
+
+      <div data-category="Humor Politics Game" class="card" data-is-selected="false"data-card-id="7">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaT2VPkibvJ-NFEkehjgO5huPaERQqkfHg6r4Oa7SQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Slidan</div>
+          <div class="card-description" data-lang="uk" data-en="The Slidan channel combines a variety of content about the war in Ukraine, which makes fun of the Russians, exciting video game playthroughs with added humor, and a lot of other interesting material!" 
+          data-uk=" Канал Slidan - поєднує в собі різноманітний контент про війну в Україні в якому висміює росіян, захоплюючі проходження відеоігор з додаванням юмору та багато іншого цікавого матеріалу!">
+            Канал Slidan - поєднує в собі різноманітний контент про війну в Україні в якому висміює росіян, захоплюючі проходження відеоігор з додаванням юмору та багато іншого цікавого матеріалу!</div> 
+        </div>
+        <div class="card-link">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+            <a href="https://t.me/sleedan" class="links" target="_blank">
+              <img src="/img/telegram.png" class="telegram" alt=""></a>
+        </div>
+      </div> 
+
+      <div data-category="reviews"class="card" data-is-selected="false" data-card-id="8">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img style="border-radius: 100px;" src="https://yt3.googleusercontent.com/RDu6Ommi3AYs26A5aAVMgbjQEu5hVfLcA1qX6oylENd4g7_SCWWAadQDDx7MJVk_-RHXCN1H=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Макс Шелест</div>
+          <div class="card-description" data-lang="uk" data-en="Hello everyone, my name is Max Shelest, this is a channel about gaming devices. Mechanical keyboards, mice and headphones for gamers. Gaming monitors and other gaming accessories are all on my channel. PC building too, but I'm more of an amateur when it comes to that, and I just like to try things out every now and then and show you. In general, my videos are not peer-reviewed, all my videos are very subjective, I just use the device and tell what I liked and what I didn't. I am not a technician, not an engineer, I do not delve into the processes of creating devices." data-uk="Привіт усім, мене звуть Макс Шелест, це канал про ігрові девайси. Механічні клавіатури, мишки та навушники для геймерів. Ігрові монітори та інші геймерські примочки – все це є на моєму каналі. Збірка ПК теж, але в цій справі я швидше аматор, і мені просто подобається час від часу пробувати такі штуки і показувати вам. Загалом мої відео не носять експертну оцінку, всі мої відео дуже суб'єктивні, я просто користуюся девайсом і розповідаю, що мені сподобалося, а що ні. Я не технар, не інженер, я не заглиблююсь у процеси створення девайсів. ">
+            Привіт усім, мене звуть Макс Шелест, це канал про ігрові девайси. Механічні клавіатури, мишки та навушники для геймерів. Ігрові монітори та інші геймерські примочки – все це є на моєму каналі. Збірка ПК теж, але в цій справі я швидше аматор, і мені просто подобається час від часу пробувати такі штуки і показувати вам. Загалом мої відео не носять експертну оцінку, всі мої відео дуже суб'єктивні, я просто користуюся девайсом і розповідаю, що мені сподобалося, а що ні. Я не технар, не інженер, я не заглиблююсь у процеси створення девайсів. </div>
+          
+        </div>
+        <div class="card-link">
+          
+          <a href="https://www.youtube.com/@maxshelest" class="links" target="_blank">
+          <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/maxshelest" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/playerstrike/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+            <a href="https://twitter.com/playerstrike" class="links" target="_blank">
+              <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="History"class="card" data-is-selected="false" data-card-id="9">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaSYt8Lx3WHPJBspTXZf3hSedPwLzoA2cQ8aZuHtSQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Дудл</div>
+          <div class="card-description" data-lang="uk" data-uk="На своєму захоплюючому YouTube каналі створює відео, які занурюють глядачів у світ історії, розкриваючи захоплюючі подробиці та цікаві факти про різні епохи та великих лідерів. Ви отримаєте не лише задоволення від перегляду, але й корисні знання, які розширять вашу свідомість про минуле. Приєднуйтесь до мене, щоб разом відправитися у захопливу подорож через час і пізнати таємниці та героїчні вчинки величних правителів!" 
+          data-en="On his fascinating YouTube channel, he creates videos that immerse viewers in the world of history, revealing fascinating details and interesting facts about different eras and great leaders. You will get not only pleasure from viewing, but also useful knowledge that will expand your awareness of the past. Join me to embark together on an exciting journey through time and learn the secrets and heroic deeds of the great rulers!">
+            На своєму захоплюючому YouTube каналі створює відео, які занурюють глядачів у світ історії, розкриваючи захоплюючі подробиці та цікаві факти про різні епохи та великих лідерів. Ви отримаєте не лише задоволення від перегляду, але й корисні знання, які розширять вашу свідомість про минуле. Приєднуйтесь до мене, щоб разом відправитися у захопливу подорож через час і пізнати таємниці та героїчні вчинки величних правителів!</div>
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@Dydl" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Humor Music"  class="card" data-is-selected="false"data-card-id="10">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/Vz8qTjMD-2EsbsbUhuvmr_szEwcFvNuyFXL3livXbT2xd-99_PrKK35YuWMvP_F3MwV4m6ei1Ac=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Чоткий Паца</div>
+          <div class="card-description" data-lang="uk" data-en="This wonderful creative team is known for their fun and entertaining parodies of popular songs. They are able to mix humor and music, creating fun songs that are guaranteed to make the audience laugh. Their talent lies in finding the funny aspects of original compositions and playing them out in their own performances. If you need a good mood and a charge of positive energy, then you cannot miss their exciting performances and videos!" 
+          data-uk="Цей чудовий творчий колектив відомий своїми веселими та розважальними пародіями на популярні пісні. Вони здатні змішувати гумор та музику, створюючи веселі пісні, які гарантовано розсмішать аудиторію. Їх талановитість полягає в тому, що вони знаходять кумедні аспекти в оригінальних композиціях та розігрують їх у своїх власних виконаннях. Якщо вам потрібен добрий настрій і заряд позитивної енергії, то ви не можете пропустити їхні захоплюючі виступи та відео!">
+            Цей чудовий творчий колектив відомий своїми веселими та розважальними пародіями на популярні пісні. Вони здатні змішувати гумор та музику, створюючи веселі пісні, які гарантовано розсмішать аудиторію. Їх талановитість полягає в тому, що вони знаходять кумедні аспекти в оригінальних композиціях та розігрують їх у своїх власних виконаннях. Якщо вам потрібен добрий настрій і заряд позитивної енергії, то ви не можете пропустити їхні захоплюючі виступи та відео!</div>
+          
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@chotky_patsa/videos" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false"data-card-id="11">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ZdmuYFA6f_iqYErkkh9wRfk5CvIApYNJcYy8GdBQ6fAB_z_nHyK8MgBSADF0issnn19xyilvq0Q=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Nika Lenina</div>
+          <div class="card-description" data-lang="uk" data-en="Hello! My name is Alyona Kokorina or Nika Lenina.
+          Here you will find my adapted versions of popular Japanese songs, original tracks, dubbed gameplay, trailers and more.
+          Enjoy listening and viewing." data-uk="Привіт! Мене звати Альона Кокоріна чи Nika Lenina.
+          Тут ви знайдете мої адаптовані версії популярних японських пісень, авторські треки, дубльовані ігрові ролики, трейлери та багато іншого.
+          Приємного прослуховування та перегляду.">
+            Привіт! Мене звати Альона Кокоріна чи Nika Lenina.
+            Тут ви знайдете мої адаптовані версії популярних японських пісень, авторські треки, дубльовані ігрові ролики, трейлери та багато іншого.
+            Приємного прослуховування та перегляду.</div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@NLenina/videos" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/nikalenina" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/nikalenina_official/" class="links" target="_blank">
+           <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false" data-card-id="12">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/YEd6KQE1phU_ScaDVBdYl-jHEvsAEaXKzEVacfqg28my-fzEG1Il90qpCDrwiaCftbqGi4AogA=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Сметана band</div>
+          <div class="card-description" data-lang="uk" data-en="The Smetana Band is a creative team that impresses its listeners with original and charming songs. They have a unique style and the ability to create musical masterpieces from different genres. Whether it's rock, pop, folk or experimental music, Smetana Band always manages to surprise its fans and create unforgettable melodies that sink into the soul."
+           data-uk="Група Сметана Band - це творчий колектив, який вражає своїх слухачів оригінальними та чарівними піснями. Вони володіють неповторним стилем та здатністю витворяти музичні шедеври з різних жанрів. Чи то рок, поп, фолк або експериментальна музика, Сметана Band завжди вдається здивувати своїх прихильників та створювати незабутні мелодії, які западають в душу.">
+            Група Сметана Band - це творчий колектив, який вражає своїх слухачів оригінальними та чарівними піснями. Вони володіють неповторним стилем та здатністю витворяти музичні шедеври з різних жанрів. 
+            Чи то рок, поп, фолк або експериментальна музика, Сметана Band завжди вдається здивувати своїх прихильників та створювати незабутні мелодії, які западають в душу. 
+            </div>
+          </div>
+          <div class="card-link">
+            <a href="https://www.youtube.com/@smetanamusic" class="links" target="_blank">
+              <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+            <a href="https://t.me/smetanaband" class="links" target="_blank">
+              <img src="/img/telegram.png" class="telegram" alt=""></a>
+            <a href="https://www.instagram.com/smetanaband/" class="links" target="_blank">
+              <img src="/img/insta.png" class="instagram" alt=""></a>
+            <a href="https://twitter.com/smetanaband" class="links" target="_blank">
+              <img src="/img/twitter.png" class="discord" alt=""></a>
+
+        </div>
+      </div>
+
+      <div data-category="Game CSGO"class="card" data-is-selected="false"data-card-id="13">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaQ8NFPRsA9y3yPFY9407dx7PhZAFvm2O7-kegyndDA=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">PETR1K</div>
+          <div class="card-description" data-lang="uk" data-en="This is the channel of a professional eSports analyst with commentator Oleksandr Petryk. Analytical, entertaining and educational videos about CS:GO are published here. The most popular categories are: 'Chips', 'Guide from pro players', 'CS:GO Exam' and 'Who wants a Dragon Lore?'." data-uk=" Це канал професійного кіберспортивного аналітика на коментатора Олександра Петрика. Тут публікуються аналітичні, розважальні та навчальні відео про CS:GO. Найпопулярніші рубрики: 'Фішки', 'Гайд від про-гравців', 'CS:GO Іспит' та 'Хто хоче Dragon Lore?'.">
+            Це канал професійного кіберспортивного аналітика на коментатора Олександра Петрика. Тут публікуються аналітичні, розважальні та навчальні відео про CS:GO. Найпопулярніші рубрики: "Фішки", "Гайд від про-гравців", "CS:GO Іспит" та "Хто хоче Dragon Lore?".</div>
+          
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@petr1k/videos" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/petr1ktv" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://instagram.com/petr1k​" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+          <a href="https://twitch.tv/petr1ktv" class="links" target="_blank">
+            <img src="/img/twitch.png" class="twitch" alt=""></a>
+          <a href="https://twitter.com/petr1k_tv​" class="links" target="_blank">
+            <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false"data-card-id="14">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/fPuT6l5EZqAMbLEpIILN8dFLPs5RxHIkQi_ZKLjiIo_Jpkkfa6hp84rT5PwmMCLCDPOKUJEDd8Y=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Яка Різниця</div>
+          <div class="card-description" data-lang="uk" data-en="The 'Яка Різниця' group is a talented musical group that maintains its unique identity through the creation of original songs. The group is distinguished by the depth and meaningfulness of its lyrics, which reflect reality and emotional states.The group's performers have powerful vocals and are able to convey all the depth of feelings through their musical performances. Listening to 'Яка Різниця' you will immerse yourself in their world and feel musical magic that inspires and makes you think." 
+          data-uk="Група 'Яка Різниця' - це талановитий музичний колектив, який зберігає свою унікальну ідентичність через створення оригінальних пісень. Група відрізняється глибиною та смисловістю своїх текстів, які відображають реальність та емоційні стани. Виконавці групи володіють потужним вокалом та вміють передати всю глибину почуттів через свої музичні виступи. Слухаючи 'Яка Різниця', ви погрузнетеся в їхній світ та відчуєте музичну магію, яка надихає та змушує задуматися.">
+            Група "Яка Різниця" - це талановитий музичний колектив, який зберігає свою унікальну ідентичність через створення оригінальних пісень. Група відрізняється глибиною та смисловістю своїх текстів, які відображають реальність та емоційні стани. Виконавці групи володіють потужним вокалом та вміють передати всю глибину почуттів через свої музичні виступи. Слухаючи "Яка Різниця", ви погрузнетеся в їхній світ та відчуєте музичну магію, яка надихає та змушує задуматися.
+            </div>
+         
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@yaka_riznycya" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false"data-card-id="15">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/sPJqj7aIs_raJQoGQbVKvPt_zJxs9S338yKoPmPrOJRxSbJqj8rbD_TDBShfwQDQ8dBJLJfCvQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">SadSvit</div>
+          <div class="card-description" data-lang="uk" data-en="I am Bohdan Rozvadovsky, but most people know me by the pseudonym 'SadSvit'. The author of three albums: 'Суматоха' in 2020, 'Cassette' and '20&21' and the new song 'Світанок', which you can find on all existing platforms." 
+          data-uk="Я - Богдан Розвадовський ,але більшість знає мене за псевдонімом 'SadSvit'.Автор трьох альбомів: «Суматоха» 2020 року, «Cassette» та «20&21» і нової пісні 'Світанок',яку ви зможете знайти на усіх існуючих платформах .">
+            Я - Богдан Розвадовський ,але більшість знає мене за псевдонімом "SadSvit".Автор трьох альбомів: «Суматоха» 2020 року, «Cassette» та «20&21» і нової пісні "Світанок",яку ви зможете знайти на усіх існуючих платформах .</div>
+          
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@sadsvit" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/SadSvitMusic" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="hhttps://www.instagram.com/sadsvit/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false"data-card-id="16">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/f-piEF41_5LBA2nsdE2RqbpFd5IbncFUEzIqIgT-1bFE5pTsY1A8MJ7SNxY4M8sgYyXEpiEk=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Shumei</div>
+          <div class="card-description" data-lang="uk" data-en="SHumei  is a talented Ukrainian singer and musician who amazes his fans with his ability to play the flute and his charming voice.His vocal performances enchant listeners, reproducing a wide range of emotions and creating a unique soundscape. SHumei is a musician who is able to transport his listeners into the world of musical beauty and inspire them with his talent and expressiveness." data-uk="SHumei - це талановитий український співак та музикант, який здивовує своїх шанувальників своїм вмінням грати на флейті та чарівним голосом. Його вокальні виступи зачаровують слухачів, відтворюючи широкий діапазон емоцій та створюючи неповторний звуковий пейзаж. SHumei - це музикант, який здатний перенести своїх слухачів у світ музичної краси та надихнути їх своїм талантом та виразністю.">
+            SHumei  - це талановитий український співак та музикант, який здивовує своїх шанувальників своїм вмінням грати на флейті та чарівним голосом.Його вокальні виступи зачаровують слухачів, відтворюючи широкий діапазон емоцій та створюючи неповторний звуковий пейзаж. SHumei - це музикант, який здатний перенести своїх слухачів у світ музичної краси та надихнути їх своїм талантом та виразністю.
+          </div>
+
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@shumei_music/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Music"class="card" data-is-selected="false"data-card-id="17">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/xKWQHQFO9yRoSDY761Tke1jNWNxvO8BM_iZ6EplKJRLss9RkL-nDNz9gWwYtMYEbTCEZvbTqkw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Сергій Бабкін</div>
+          <div class="card-description" data-lang="uk" data-en="Serhiy Mykolayovych Babkin is a recognized Ukrainian musician, actor, author and songwriter who gained popularity as a member of the band 5'nizza. His talent, charisma and true vocation are admirable and leave an indelible impression on everyone who has the opportunity to enjoy his work." data-uk="
+          Сергій Миколайович Бабкін - визнаний український музикант, актор, автор і виконавець пісень, що здобув популярність як учасник гурту 5'nizza.Його талант, харизма та справжнє покликання викликають захоплення і залишають незабутнє враження на кожному, хто має можливість насолодитися його творчістю.
+          ">
+            Сергій Миколайович Бабкін - визнаний український музикант, актор, автор і виконавець пісень, що здобув популярність як учасник гурту 5'nizza.Його талант, харизма та справжнє покликання викликають захоплення і залишають незабутнє враження на кожному, хто має можливість насолодитися його творчістю.
+          </div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@sbabkinofficial" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://www.instagram.com/babkin_official/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Politics Game"class="card" data-is-selected="false"data-card-id="18">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaTkC61V1WCKIM7yjPl-QZVe9Vdw6Yyo0dplWuGXww=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Alex_D20</div>
+          <div class="card-description" data-lang="uk" data-en="About games in Ukrainian, Ukrainian games and games about Ukraine on PC and smartphone!
+          ► Quality content on YouTube exclusively in Ukrainian!" data-uk="Про ігри українською мовою, українські ігри та ігри про Україну на ПК та смартфон!
+          ► Якісний контент на YouTube виключно українською мовою!">
+            Про ігри українською мовою, українські ігри та ігри про Україну на ПК та смартфон!
+            ► Якісний контент на YouTube виключно українською мовою!</div> 
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/c/AlexD20" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/alexd20" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://discord.com/invite/alex-d20" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+          <a href="https://twitter.com/Alex_D20" class="links" target="_blank">
+            <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Humor" class="card" data-is-selected="false"data-card-id="19">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/zfBYl7ANK59mkGDuiASBMXe3CQ4-Hzta6wdd1Iu2NLZqd5o3Z-qkVOsx6jTVTBFASSpfH6qbDw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">ЛЕВИ НА ДЖИПІ</div>
+          <div class="card-description" data-lang="uk" data-en="The Lions on the Jeep channel features independent humorous content that brings smiles and laughter to its viewers. This channel was founded by Andrii Luzan, Mykola Zyryanov and Valik Mikhienko Thanks to their creativity and jokes, the audience gets the opportunity to relax and take a break from everyday worries. Join them and enjoy the laughter and fun that 'Jeep Lions' has to offer."
+           data-uk="На каналі 'Леви на джипі' знаходиться незалежний гумористичний контент, який викликає посмішки та сміх у своїх глядачів. Цей канал був заснований Андрієм Лузаном, Миколою Зиряновим і Валіком Міхієнко. Завдяки їхній творчості та жартам, глядачі отримують можливість розслабитися та відпочити від повсякденних турбот. Приєднуйтесь до них і насолоджуйтесь сміхом та веселощами, які пропонує 'Леви на джип'."> 
+            На каналі "Леви на джипі" знаходиться незалежний гумористичний контент, який викликає посмішки та сміх у своїх глядачів. Цей канал був заснований Андрієм Лузаном, Миколою Зиряновим і Валіком Міхієнко. Завдяки їхній творчості та жартам, глядачі отримують можливість розслабитися та відпочити від повсякденних турбот. Приєднуйтесь до них і насолоджуйтесь сміхом та веселощами, які пропонує "Леви на джипі".
+          </div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/c/%D0%9B%D0%AC%D0%92%D0%AB%D0%9D%D0%90%D0%94%D0%96%D0%98%D0%9F%D0%95" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="hhttps://t.me/lvinajeepe" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/lvi_na_jeepe/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+
+      <div data-category="Minecraft"class="card" data-is-selected="false"data-card-id="20">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img  style="border-radius: 115px 115px 125px 125px;" src="https://yt3.googleusercontent.com/HRbr-NSxXX9K5TMOLlIy2B2WRPc76luBz0rdVSgTUsbgHg7Y_D-kodbgwv_Y6py3vGGgico8S-Q=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Неркін</div>
+          <div class="card-description" data-lang="uk" data-en="Hello everyone! My name is Nerkin, I'm 24 years old and I play Minecraft, and I try to learn something new about it every day! I even created the column 'Minecraft Discovery' - in which I talk about all kinds of curiosities and facts.
+          Nerkin is the Nerkin channel in Ukrainian. On this channel you can find many different videos about the game Minecraft in Ukrainian." data-uk="Усім привіт! Мене звати Неркін, мені 24 роки і я граю в Minecraft, і стараюсь кожного дня дізнатися про нього щось нове! Навіть створив рубрику 'Майнкрафт Відкриття' - в якій розповідаю про всілякі цікавостки й факти. 
+          Неркін - це канал Nerkin українською мовою. На цьому каналі можна знайти безліч різних відео по грі Майнкрафт українською.">
+          Усім привіт! Мене звати Неркін, мені 24 роки і я граю в Minecraft, і стараюсь кожного дня дізнатися про нього щось нове! Навіть створив рубрику "Майнкрафт Відкриття" - в якій розповідаю про всілякі цікавостки й факти. 
+          Неркін - це канал Nerkin українською мовою. На цьому каналі можна знайти безліч різних відео по грі Майнкрафт українською.
+        </div>
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/channel/UCIO1ZRhob38Qi1I-bghn0dA" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/nerkinua" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/_nerkin/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Game"class="card" data-is-selected="false"data-card-id="21">
+        <div class="favicon"> 
+          <img src="img/selected.png" class="selected"  alt="">
+          <img src="img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaSxXRHNGnMpGTtSyaodcCxbdH9vx0V39RyhsSLDUg=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">OLDboi</div>
+          <div class="card-description" data-lang="uk" data-en="The channel 'OLDboi' is an author's channel dedicated to video games, based on the Ukrainian language. Here you will find a unique first-person view of the gaming world. 'OLDboi' offers reviews, retrospectives, gameplay videos and other interesting content that highlights the memorable moments and importance of video games in our lives." 
+          data-uk=" Канал 'OLDboi' - це авторський канал, присвячений відеоіграм, заснований на українській мові. Тут ви знайдете унікальний погляд на світ геймінгу, представлений від першої особи. 'OLDboi' пропонує огляди, ретроспективи, геймплейні відео та інші цікаві контенти, які підкреслюють незабутні моменти та значення відеоігр у нашому житті.">
+            Канал 'OLDboi' - це авторський канал, присвячений відеоіграм, заснований на українській мові. Тут ви знайдете унікальний погляд на світ геймінгу, представлений від першої особи.'OLDboi' пропонує огляди, ретроспективи, геймплейні відео та інші цікаві контенти, які підкреслюють незабутні моменти та значення відеоігр у нашому житті. </div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@oldboiua/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://www.t.me/oldboi_ua" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://discord.gg/r238TExmMb" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+          <a href="https://www.twitch.tv/oldboiua" class="links" target="_blank">
+            <img src="/img/twitch.png" class="twitch" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false"data-card-id="22">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/HO9mi0dp7Zp4foK8VgltL0JNCo_3Y7pTyxm18Z9jsOkbdimTqwtb7o9SeSd1TGtLqUD0It2d8zU=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Domentoro</div>
+          <div class="card-description"  data-lang="uk" data-en="• Dima-Dimon-Domentoro
+          • Khmelnytskyi, Ukraine
+          • I have been living in Warsaw since 2021
+          • I record vlogs in Ukrainian" data-uk="• Діма-Дімон-Доменторо
+          • Хмельницький, Україна
+          • З 2021 року живу у Варшаві
+          • Записую влоги українською мовою">• Діма-Дімон-Доменторо
+            • Хмельницький, Україна
+            • З 2021 року живу у Варшаві
+            • Записую влоги українською мовою</div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@Domentoro/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+            <a href="https://www.instagram.com/domentoro/" class="links" target="_blank">
+              <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false"data-card-id="23">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image" >
+          <img  style="border-radius: 100px;" src="https://yt3.googleusercontent.com/ETUYGtUe6OI6WP_yQgCq8FreY5Kh4s_ecyNH1M57VJel8ijbof4D5dcro8ThlXcR8mJY2TIE_FQ=s176-c-k-c0x00ffffff-no-rj"  alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title" >STERNENKO</div>
+          <div class="card-description" data-lang="uk" data-en="A Ukrainian-language channel that comments on the news daily and from time to time conducts streams for viewers" data-uk="Україномовний канал на якому щоденно коментуються новини та час від часу проводить стрими для глядачів">
+            Україномовний канал на якому щоденно коментуються новини та час від часу проводить стрими для глядачів</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@STERNENKO/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/ssternenko" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://twitter.com/sternenko" class="links" target="_blank">
+            <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Films"class="card" data-is-selected="false"data-card-id="24">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/helFQpFYMtL8Zfk_373uTf78gSW7OFqTQQ815dt16Aw11HAULS8g3S9cRGaQN7nymZRFXeWAbw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Загін Кіноманів</div>
+          <div class="card-description" data-lang="uk" data-en="Simple actor who is interested in cinema and decided to create my channel on this topic. However, over time, the channel about cinema turned into a channel about meanings, contents and cultural space, sometimes with a touch of humor. Here you will find a variety of videos dedicated to Ukrainian cinematography, as well as many other interesting content that will interest you. We offer reviews of new Ukrainian films and interesting facts about the making of films" 
+          data-uk="Простий актор, якому цікавий кінематограф і який вирішив створити свій канал на цю тему. Проте з часом канал про кіно перетворився канал про сенси, змісти та культурний простір, іноді з долею гумору. Тут ви знайдете різноманітні відео, присвячені українській кінематографії, а також багато іншого цікавого контенту, що вас зацікавить.Ми пропонуємо огляди нових українських фільмів та цікаві факти про створення фільмів">
+          Я простий актор, якому цікавий кінематограф і який вирішив створити свій канал на цю тему. Проте з часом канал про кіно перетворився канал про сенси, змісти та культурний простір, іноді з долею гумору. Тут ви знайдете різноманітні відео, присвячені українській кінематографії, а також багато іншого цікавого контенту, що вас зацікавить.Ми пропонуємо огляди нових українських фільмів та цікаві факти про створення фільмів</div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@zagin_kinomaniv/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/zagin_kinomaniv" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/zagin_kinomaniv/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Game Minecraft"class="card" data-is-selected="false"data-card-id="25">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/vGP1H221u4WcYKWacb3-0aQktZ4HvAzHm4PSgfA6RB4GYdET3t5VrvA50Z4K0ckseNz7W_TYlw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Ezzyliok</div>
+          <div class="card-description" data-lang="uk" data-en="Welcome to the YouTube channel dedicated to all sorts of Minecraft content! We created this channel to share with you a lot of exciting videos related to the favorite game of millions of players around the world." data-uk="Ласкаво просимо на YouTube-канал, який присвячений усьому різноманітному контенту з гри Minecraft! Ми створили цей канал, щоб поділитися з вами безліччю захоплюючих відео, пов'язаних з улюбленою грою мільйонів гравців по всьому світу.">Ласкаво просимо на YouTube-канал, який присвячений усьому різноманітному контенту з гри Minecraft! Ми створили цей канал, щоб поділитися з вами безліччю захоплюючих відео, пов'язаних з улюбленою грою мільйонів гравців по всьому світу.</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@ezzyliok/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>  
+          <a href="https://discord.gg/RpvvACJRP8" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+          <a href="https://www.twitch.tv/ezzyliok" class="links" target="_blank">
+            <img src="/img/twitch.png" class="twitch" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Game Minecraft"class="card" data-is-selected="false" data-card-id="26">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/JWQBxSQWAy-Dt8zg77wK1_t05CZZI3njOgP6Dv5uETK5TqMkYNNP1TM-dB18ydkClBisy7c84CQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Квадратний</div>
+          <div class="card-description" data-lang="uk" data-en="This YouTube channel is a veritable treasure trove of entertainment and learning for all Minecraft fans. We decided to raise the bar and bring you a variety of content related to this exciting game." data-uk="Цей YouTube-канал є справжнім скарбницею розваг і навчання для всіх шанувальників гри Minecraft. Ми вирішили підняти планку та пропонуємо вам різноманітний контент, пов'язаний з цією захоплюючою грою.">Цей YouTube-канал є справжнім скарбницею розваг і навчання для всіх шанувальників гри Minecraft. Ми вирішили підняти планку та пропонуємо вам різноманітний контент, пов'язаний з цією захоплюючою грою. </div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@kvadratnyk/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/Kvadratnykkk" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://discord.com/invite/aCdAJYEjCg" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="27">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/hesY_G2-5dFFtA68_k6SHVANe_mV6zhKl7AkOaJMDnSjznBWn-nXN8BxF5Q2XJrNHtWP8hah=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">BAKAI</div>
+          <div class="card-description" data-lang="uk" data-en="BAKAI is a channel dedicated to current news, including the war in Ukraine, as well as other important events around the world." data-uk="BAKAI- це канал, присвячений актуальним новинам, зокрема війні в Україні, а також іншим важливим подіям по всьому світу.">BAKAI- це канал, присвячений актуальним новинам, зокрема війні в Україні, а також іншим важливим подіям по всьому світу.</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@_BAKAI/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/+cXJrqp3egfA5NWE6" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/_bakai/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div> 
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="28">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ImCN332v3kNMbsucpKZ7y8jobvzPTOl4h4flhc_Z83O3h4e5fn_LPF5_i0RsvFaUNA4lflU-=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title" data-lang="uk" data-en="" data-uk="">Діаріуш - реддіт українською</div>
+          <div class="card-description" data-lang="uk" data-en="Diaryush is the best Reddit threads in Ukrainian, the most interesting from AskReddit and not only" data-uk=" Діаріуш це кращі треди REDDIT українською, найцікавіше з AskReddit і не тільки">
+            Діаріуш це кращі треди REDDIT українською, найцікавіше з AskReddit і не тільки</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@diariush_reddit_ua/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/diariush_yt" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+            <a href="https://www.instagram.com/sv_anishchik/" class="links" target="_blank">
+              <img src="/img/insta.png" class="instagram" alt=""></a>
+          <a href="https://twitter.com/Diariush" class="links" target="_blank">
+            <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="29">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/JiuaNwP8yNpq-_tBhOyCzL0IXYPjZN3lOAqpp5WHHP5uvoRcfzfk0KgN4YR-2bmJafG046qF3IQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Нейд</div>
+          <div class="card-description" data-lang="uk" data-en="I make videos about animations and something similar to them." data-uk="Роблю відео про анімації і щось на них схоже.">Роблю відео про анімації і щось на них схоже. </div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@nade_cgt/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/nade_cgt" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="hhttps://www.instagram.com/cosmo_cgt/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+          <a href="https://discord.com/invite/nadecgt" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Game Minecraft"class="card" data-is-selected="false" data-card-id="30">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ZzAi1cN4QIps3xwg6cE5AhQ2FRSPY4naraITbChu96OMRtaV7JxtEvhVf0NoM6BJnyJP4zX92A=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Нітон</div>
+          <div class="card-description" data-lang="uk" data-en="Who is Niton?
+          He is completely obsessed with the game Minecraft, which shoots the most diverse variations of videos:
+       ○ Vanilla Survival (regular Minecraft)
+       ○ Survival with mods
+       ○ Building anything in Minecraft
+       ○ And just interesting videos" data-uk="Хто такий Нітон?
+       На всю голову схиблений на грі Майнкрафт, який знімає найрізноманітніші варіації роликів:
+    ○ Виживання ваніли (звичайний Майнкрафт)
+    ○ Виживання з модами
+    ○ Будівництво всього, що завгодно в Майнкрафті
+    ○ І просто цікаві ролики">Хто такий Нітон?
+            На всю голову схиблений на грі Майнкрафт, який знімає найрізноманітніші варіації роликів:
+         ○ Виживання ваніли (звичайний Майнкрафт)
+         ○ Виживання з модами
+         ○ Будівництво всього, що завгодно в Майнкрафті
+         ○ І просто цікаві ролики
+         </div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/channel/UC4spQb-qTmhU2zG0We1kSsw" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/nitonUA" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="31">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaTbIBqkzRdg26Tpu7mdDYffiZNYOhSeLk4p2E30vQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Ніна - Україна / Nina - Ukraine</div>
+          <div class="card-description" data-lang="uk" data-en="My name is Nina, I grew up in Kyiv, studied at KPI, and have been living abroad for the past 11 years. In Switzerland, she completed postgraduate studies in finance (PhD, University of St Gallen), for the past 5 years she worked as a professor at a business school in the USA. I like to be inspired and inspire others!" data-uk="Мене звати Ніна, я виросла у Києві, вчилась у КПІ, останні 11 років живу за кордоном. У Швейцарії закінчила аспірантуру з фінансів (PhD, University of St Gallen),  останні 5 років працювала професором у бізнес школі в США. Люблю надихатись и надихати інших!">
+            Мене звати Ніна, я виросла у Києві, вчилась у КПІ, останні 11 років живу за кордоном. У Швейцарії закінчила аспірантуру з фінансів (PhD, University of St Gallen),  останні 5 років працювала професором у бізнес школі в США. Люблю надихатись и надихати інших!</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@nina_ukraine/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/NinaUkraine" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/nina_ukraine_youtube/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Game Minecraft"class="card" data-is-selected="false" data-card-id="32" >
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/7NyF6gwxOdd68dCoFRJCizEkFN0VNlmRIvkygXu5pRp30ZeuHLnymBOxJT7F_bzC_Gx5Izg6=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Ґедзь</div>
+          <div class="card-description" data-lang="uk" data-en="Gedz is a channel dedicated to the popular game Minecraft and videos with the passage of various maps. Our team brings you exciting and entertaining videos related to the unique world of Minecraft. On the Gedz channel, you will find interesting series of passing various maps and challenges in Minecraft." data-uk="Ґедзь - це канал, присвячений популярній грі Minecraft та відео з проходженням різних карт. Наша команда пропонує вам захоплюючі та розважальні відео, пов'язані з унікальним світом Minecraft. На каналі Ґедзь ви знайдете цікаві серії проходження різноманітних карт і викликів у Minecraft.">"Ґедзь" - це канал, присвячений популярній грі Minecraft та відео з проходженням різних карт. Наша команда пропонує вам захоплюючі та розважальні відео, пов'язані з унікальним світом Minecraft. На каналі "Ґедзь" ви знайдете цікаві серії проходження різноманітних карт і викликів у Minecraft.</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@gedz/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/gedz1" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://discord.com/invite/VVkEAf8s6m" class="links" target="_blank">
+            <img src="/img/disc.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other Politics"class="card" data-is-selected="false" data-card-id="33">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/j3jTJAhvOgk_dmAxTf5nfPn1o-bGWRocnALUDc-9vJFw-QJwx7biyTNHu6vd5q5FnOi2VqXItQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Палає</div>
+          <div class="card-description" data-lang="uk" data-en="Palaye is a channel devoted to the coverage of the war between Ukraine and Russia." data-uk="Палає - це канал, присвячений освітленню війни між Україні та росією.">Палає - це канал, присвячений освітленню війни між Україні та росією.</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/c/Палає" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="34">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/cx1g_VoURuS83pkJyFEIsgx9-Tb3kXS5dLoZ8qiq2dJC0oaLuIdSTBa9P_tkO_E8fPFQGUfUrmk=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Телебачення Торонто</div>
+          <div class="card-description" data-lang="uk" data-en="Television Toronto is an exciting YouTube channel dedicated to current news, including the war in Ukraine, as well as other important events around the world. Our team makes every effort to provide objective and comprehensive information about the current situation." data-uk="Телебачення Торонто - це захоплюючий YouTube-канал, присвячений актуальним новинам, зокрема війні в Україні, а також іншим важливим подіям по всьому світу. Наша команда докладає всіх зусиль, щоб надати об'єктивну та комплексну інформацію про поточну ситуацію.">Телебачення Торонто - це захоплюючий YouTube-канал, присвячений актуальним новинам, зокрема війні в Україні, а також іншим важливим подіям по всьому світу. Наша команда докладає всіх зусиль, щоб надати об'єктивну та комплексну інформацію про поточну ситуацію.</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@uttoronto" class="links" target="_blank">
+             <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+           <a href="https://t.me/torontotv " class="links" target="_blank">
+             <img src="/img/telegram.png" class="telegram" alt=""></a>
+           <a href="https://www.instagram.com/toronto_tv/" class="links" target="_blank">
+             <img src="/img/insta.png" class="instagram" alt=""></a>
+         </div>
+      </div>
+      <div data-category="Humor Busines"class="card" data-is-selected="false" data-card-id="35">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/voTAfE1mvGeNdv1n3b2tBDuSuohWIjDCA7TdmbB-CMO6QLifbYpOEsCyxXHd6RXIydtSw9Ya=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">RDeni</div>
+          <div class="card-description" data-lang="uk" data-en="RDeni makes humorous tavlog videos in which he talks about business and teaches how to earn money on the Internet." data-uk=" RDeni знімає гумористичні відео тавлоги, в яких розповідає про бізнес та навчає заробітку в інтернеті.">
+            RDeni знімає гумористичні відео тавлоги, в яких розповідає про бізнес та навчає заробітку в інтернеті.</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@RDeni/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/joinchat/VB4kP4fQStpPyGvj" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/rostik.den/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+          </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="36">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaQrDqE5dk3KV5Gssmo0kzDLsNltDWnibWVZR0yv=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Чоткі Новини</div>
+          <div class="card-description" data-lang="uk" data-en="Chotky Patsa presents a new project where you can learn about the current events of Ukraine and the world in a light musical form and, of course, with HUMOR!" data-uk="Чоткий Паца представляє новий проєкт, де ти зможеш дізнатися про актуальні події України і світу в легкій музичній формі і, звичайно ж, з ГУМОРОМ! ">
+            Чоткий Паца представляє новий проєкт, де ти зможеш дізнатися про актуальні події України і світу в легкій музичній формі і, звичайно ж, з ГУМОРОМ! </div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@chotki_news/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="37">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaRw-qxp5ngE6n8i5xRABxobsXhqsoSS7ceaSiFIvw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Сергій Притула</div>
+          <div class="card-description" data-lang="uk" data-en="Congratulations!
+          With you is Serhiy Prytula - politician, volunteer, TV presenter.
+          And this is my personal YouTube channel." data-uk="Вітаю!
+          З вами Сергій Притула - політик, волонтер, телеведучий. 
+          І це мій особистий ютуб канал. ">Вітаю!
+            З вами Сергій Притула - політик, волонтер, телеведучий. 
+            І це мій особистий ютуб канал. </div>
+         
+        </div>
+        <div class="card-link">
+        	<a href="https://www.youtube.com/@Prytula" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/PrytulaSerhiy" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/siriy_ua/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>    
+         </div>
+      </div>
+      <div data-category="Films"class="card" data-is-selected="false" data-card-id="38">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaTayb_MGQD5bEv0TUoE-xZIW4L6RKi5zR3_IRXqeQ=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Geek Journal</div>
+          <div class="card-description" data-lang="uk" data-en="Hello, welcome to the Geek Journal channel, where you can find reviews of Ukrainian and international films, current news from around the world and a lot of other interesting content." data-uk="Привіт, тебе вітає канал Geek Journal, де ти зможеш знайти огляди українських та світових фільмів, актуальні новини зі всього світу та ще багато цікавого контенту.">
+            Привіт, тебе вітає канал Geek Journal, де ти зможеш знайти огляди українських та світових фільмів, актуальні новини зі всього світу та ще багато цікавого контенту.  </div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@GeekJournal/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/geekjournalua" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/geek.journal.official/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+            <a href="https://twitter.com/Tylerruto" class="links" target="_blank">
+              <img src="/img/twitter.png" class="discord" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="39">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ywpCitvh9e4-MxniSUqlOCZ_Js3226b4AZZud78mKZaxe3ILkxwXhQZwZNxg4DPyRggc6YdLfA=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">SAMOKHVALOV</div>
+          <div class="card-description" data-lang="uk" data-en="SAMOKHVALOV is a political vlogger who devotes his work to researching the war in Ukraine and makes videos on this topic." data-uk="SAMOKHVALOV - політичний відеоблогер, який присвячує свою роботу дослідженню війни в Україні та знімає відео на цю тему.">SAMOKHVALOV - політичний відеоблогер, який присвячує свою роботу дослідженню війни в Україні та знімає відео на цю тему. </div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@SAMOKHVALOVSTUDIO/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/SAMOKHVALOVVIKTOR" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/samokhvalov_viktor_/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other Politics"class="card" data-is-selected="false" data-card-id="40">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img style="border-radius: 100px;" src="https://yt3.googleusercontent.com/Ev8mWGA5cWA1CwQmZfJGZLRiQNR9ycXGlFAsxPWuLmsVwbg9vA5cZl7Cf2zS3h4sEyHtopsa=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Світ навиворіт</div>
+          <div class="card-description" data-lang="uk" data-en="'The world inside out' travels to countries to which it is not customary to go with tourist tours." data-uk="'Світ навиворіт' подорожує країнами, в які не прийнято їздити з туристичними турами.">
+            "Світ навиворіт" подорожує країнами, в які не прийнято їздити з туристичними турами.</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@naiznankutv/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+           </div>
+      </div>
+      <div data-category="Game CSGO"class="card" data-is-selected="false" data-card-id="41">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ytc/AOPolaRpBdYAtC5zE2ivW-D09QD7LkJwOp606z5nyFe4DXo=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">ceh9 CS:GO</div>
+          <div class="card-description" data-lang="uk" data-en="Hello everyone, dear friends, here I will upload the most interesting and useful CS:GO and CS2 videos!" data-uk="Всім привіт, дорогі друзі, тут я буду заливати найцікавіші та найкорисніші відео по CS:GO та CS2!">Всім привіт, дорогі друзі, тут я буду заливати найцікавіші та найкорисніші відео по CS:GO та CS2!</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@ceh9csgo/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/COUNTERSRA4" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/ceh999/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+          <a href="https://www.twitch.tv/ceh9" class="links" target="_blank">
+            <img src="/img/twitch.png" class="twitch" alt=""></a>
+          <a href="https://twitter.com/cehebu4" class="links" target="_blank">
+            <img src="/img/twitter.png" class="discord" alt=""></a>
+          </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="42">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/RHNWcOKJerIMxBAEZgHtpG_GUsW5y9mLYA5sxFp5Wxv0Ap75Xd8fxSzYKxbKsAu1FnNN53o-0t8=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Кефірний </div>
+          <div class="card-description" data-lang="uk" data-en="I do reviews, analysis and analysis of films and anime" data-uk="Роблю огляди, розбір та аналітику фільмів та аніме ">Роблю огляди, розбір та аналітику фільмів та аніме</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@kefirnuy" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/kefirnuy" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/kxher/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div> 
+      <div data-category="Politics Other"class="card" data-is-selected="false" data-card-id="43">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/G1vDN9GxLIMdHOtZEp96ZGrlq79sorNXKSTvsX5Pt3Ca6ofm1kElIS2IEa_t9AfiwZEn7NCclr4=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Pressing </div>
+          <div class="card-description" data-lang="uk" data-en="✋ Hello! My name is Serhiy Peychev. Here I will shoot cool reports, press the guests, raise topics that will increase your pressure.
+          🔥I'll push the heroes in the comments, and you subscribe and do it in the comments!💬" data-uk="✋Привіт! Мене звуть Сергій Пейчев. Тут я буду знімати круті репортажі, пресувати гостей, піднімати теми, від яких у вас збільшиться тиск. 
+          🔥Я запресингую героїв у відосах, а ти підписуйся і зроби це у коментарях!💬">✋Привіт! Мене звуть Сергій Пейчев. Тут я буду знімати круті репортажі, пресувати гостей, піднімати теми, від яких у вас збільшиться тиск. 
+            🔥Я запресингую героїв у відосах, а ти підписуйся і зроби це у коментарях!💬</div>
+         
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@SergiyPeichev" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/pei4ev" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          <a href="https://www.instagram.com/sergiy.peichev/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+        </div>
+      </div> 
+      <div data-category="Politics"class="card" data-is-selected="false" data-card-id="44">
+        <div class="favicon"> 
+        <img src="/img/selected.png" class="selected"  alt="">
+        <img src="/img/unselected.png" class="unselected"   alt="">
+      </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/eCGNeDzuTqlZ8V7QEsVZUJFhKBJkzJWb_3sZBQZqvqG-U6w6Je4Oxv9Vs7CSv8mF-LXewgiIfA=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Горицвiт</div>
+          <div class="card-description" data-lang="uk" data-en="Economic policy and international relations from the Ukrainian point of view" data-uk="Економічна політика та міжнародні відносини з української точки зору">Економічна політика та міжнародні відносини з української точки зору</div>
+          
+        </div>
+        <div class="card-link">
+         <a href="https://www.youtube.com/@horytsvit/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/horytsvit" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Politics Other"class="card" data-is-selected="false" data-card-id="45">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/LJ2lfO5MJIgsA3jvmRAjhwBDtwUMJ9MUY8hr5IotwR6j-g0hAqyT1YRZNtXRZRuZFvBQDav-Hw=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Good Times Bad Times Україна</div>
+          <div class="card-description" data-lang="uk" data-en="The Good Times Bad Times project was created due to the lack of reliable and independent information about current events in the world.
+          The Ukrainian team of translators, announcers and video editors is working to ensure that Ukrainians can receive this information in their native language.
+          The goal of the project is to analyze and explain the complexity of the modern world, all of which is accompanied by high-quality and pleasant visualization." data-uk="Проєкт Good Times Bad Times був створений через брак достовірної та незалежної інформації про поточні події у світі.
+          Українська команда перекладачів, дикторів та редакторів відео працює над тим, щоб українці могли отримувати цю інформацію рідною мовою.
+          Мета проєкту - проаналізувати та пояснити складність сучасного світу, все це супроводжується якісною і приємною візуалізацією.">Проєкт Good Times Bad Times був створений через брак достовірної та незалежної інформації про поточні події у світі.
+            Українська команда перекладачів, дикторів та редакторів відео працює над тим, щоб українці могли отримувати цю інформацію рідною мовою.
+            Мета проєкту - проаналізувати та пояснити складність сучасного світу, все це супроводжується якісною і приємною візуалізацією.</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@GoodTimesBadTimesUA/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+         </div>
+      </div>
+      <div data-category="Game Game_news"class="card" data-is-selected="false"data-card-id="46">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/ChmlWjoubRkJkc7t5uHXrJpBLSmam8HngmyPUfTtJApsV_WFfvz95sR5DfxlHJEOQkYCrz4q5M4=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">GameStreetUA</div>
+          <div class="card-description" data-lang="uk" data-en="On our channel you will find interviews with Ukrainian game developers, various videos about the game industry, reviews and more! :)" data-uk="На нашому каналі ви зустрінете інтерв'ю з українськими розробниками ігор, різноманітні відео про ігрову індустрію, огляди та не тільки! :)">На нашому каналі ви зустрінете інтерв'ю з українськими розробниками ігор, різноманітні відео про ігрову індустрію, огляди та не тільки! :)</div>
+          
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@GameStreetUA/featured" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://t.me/gamestreetua" class="links" target="_blank">
+            <img src="/img/telegram.png" class="telegram" alt=""></a>
+          </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="47">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/buYbrMXCmtdGDBHXBoYE1N1J5HN7WWTH_2R6S3YuuJj3qnPXIIrZVdLZnWFUd1bYjJ3HBLK0=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Vaibi</div>
+          <div class="card-description" data-lang="uk" data-en="Hello! My name is Vadim. On this channel, I will talk about the latest news in the world of cinema and beyond." data-uk="Привіт! Мене звати Вадим. На цьому каналі я буду розповідати про новинки у світі кіно та не тільки.">Привіт! Мене звати Вадим. На цьому каналі я буду розповідати про новинки у світі кіно та не тільки.</div>
+          
+        </div>
+        <div class="card-link">
+         <a href="https://www.youtube.com/@Vaibi/featured"  class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+        </div>
+      </div>
+      <div data-category="Other"class="card" data-is-selected="false" data-card-id="48">
+        <div class="favicon"> 
+          <img src="/img/selected.png" class="selected"  alt="">
+          <img src="/img/unselected.png" class="unselected"   alt="">
+        </div>
+        <div class="card-image">
+          <img src="https://yt3.googleusercontent.com/i8gpPK4Op8A8OmAmqc22tqTNXLw8HKm7GS-cBKkdKnLqqEaW2Vzadm3PaKDRKqq6bz4yijZBHDc=s176-c-k-c0x00ffffff-no-rj" alt="Image">
+        </div>
+        <div class="card-content">
+          <div class="card-title">Стася</div>
+          <div class="card-description" data-lang="uk" data-en="She opens people's eyes to this world and society." data-uk="Вона відкриває людям очі на цей світ і суспільство.">Вона відкриває людям очі на цей світ і суспільство.</div>
+        </div>
+        <div class="card-link">
+          <a href="https://www.youtube.com/@stacy__mar" class="links" target="_blank">
+            <img src="/img/youyoutube.png" class="youtube" alt=""></a>
+          <a href="https://www.instagram.com/stacia_mar/" class="links" target="_blank">
+            <img src="/img/insta.png" class="instagram" alt=""></a>
+         </div>
+      </div>
+      <div class="polosa">
+        <button  class ="prevCards" >&#8592;</button>
+        <button class="num" onclick="showCard(this)">1</button>
+        <button class="num" onclick="showCard(this)">2</button>
+        <button class="num" onclick="showCard(this)">3</button>
+        <button class="num" onclick="showCard(this)">4</button>
+        <button class="num" onclick="showCard(this)">5</button>
+        <button class="num" onclick="showCard(this)">6</button>
+        <button class="num" onclick="showCard(this)">7</button>
+        <button class="num" onclick="showCard(this)">8</button>
+        <button class ="nextCards">&#8594;</button>
+      </div>
+    </div>
+  </div>
+<script src="JSsripts/jsfull.js"></script>
+<script src="JSsripts/pages.js"></script>
+<footer>
+  <h2>Version 1.0</h2>
+  <h3>This site was made by <a href="https://github.com/Daniil0Yehorov">Daniil0Yehorov</a> and with the help of <a href="https://github.com/AndreyGordienkotut">AndreyGordienkotut</a></h3>
+</footer>
+</html>

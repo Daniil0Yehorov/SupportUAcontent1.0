@@ -1,0 +1,625 @@
+
+@media (max-width: 1440px) { 
+  :root {
+  --fontFam: Georgia, 'Times New Roman', Times, serif;
+}
+.ALLBUTTONS{
+display: flex;  
+background-color: rgb(52, 49, 50);}
+.containerALL {
+  background-color: #001019;
+  display: flex;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  font-family: var(--fontFam);
+}
+.nav1 {
+  background-color: rgb(221, 72, 20);
+  padding: 0.1875em; 
+  color: white;
+}
+.mainh1head{
+  padding-top: 0.5em;
+  padding-bottom: 0.4em;
+  padding-left: 1em;
+}
+.information {
+  flex: 4;
+  background-color: rgb(252, 252, 252);
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+.nav_menu {
+  flex: 1;
+  padding: 0.1875em; 
+  background-color: rgb(52, 49, 49);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.subcategory-listhidden {
+  list-style: none;
+  padding: 0;
+}
+.subcategory-listhidden li {
+  text-decoration: none;
+  margin-bottom: 0.625em; 
+}
+.subcategory-listhidden li a {
+  color: rgb(179, 179, 179);
+  text-decoration: none;
+  text-shadow: 0 0 2px rgba(179, 179, 179, 0.2);
+}
+.category-link:hover {
+  text-decoration: none;
+  background-color: rgba(179, 179, 179, 0.2);
+}
+.category-list{
+padding-left: 0;
+}
+.category-list li {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(179, 179, 179);
+  padding: 10px 0 10px 0;
+}
+footer {
+  text-align: center;
+  background-color: rgb(221, 72, 20);
+  padding: 0.0625em; 
+  color: white;
+}
+.hidden {
+  display: none;
+}
+.card {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  max-height: 62%;
+  margin: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 0.5em;
+  overflow: hidden;
+  background-color: rgb(231, 230, 232);
+  position: relative;
+}
+.card-image {
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  padding-top: 0.75em;
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+  margin-left: 50%;
+  border-radius: 1em;
+}
+.card-content {
+  padding: 10px;
+}
+.card-title {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.card-description {
+  margin-top: 10px;
+  margin-bottom: 2em;
+}
+.card-link {
+  margin-top: 1em;
+}
+#butchange{
+  flex: 1;
+  margin: 0.2em;
+  padding: 0.6em;
+  font-family: var(--fontFam);
+  color: white;
+  background-color: rgb(221, 72, 20);
+  border-color: rgb(221, 72, 20);
+}
+#randomq{
+  flex: 1;
+  margin: 0.2em;
+  padding: 0.6em;
+  color: white;
+  background-color: rgb(221, 72, 20);
+  border-color: rgb(221, 72, 20);
+}
+#showALL{
+  flex: 1;
+  margin: 0.2em;
+  padding: 0.6em;
+  font-family: var(--fontFam);
+  color: white;
+  background-color: rgb(221, 72, 20);
+  border-color: rgb(221, 72, 20);}
+.card-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+}
+.favicon{
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  height: auto;
+  width: 3em;
+  pointer-events: none;
+  position: absolute;
+  left: 85%;
+}
+.favicon img {
+  width: 100%;
+  height: auto;
+
+}
+.card:hover .unselected{
+  display: block;
+} 
+.selected{
+  display: none;
+}
+.unselected{
+  display: none;
+}
+.openclosefiltr{display: none;}
+#randomq:hover,#butchange:hover,#showALL:hover {
+  border-color: rgba(208, 60, 15, 0.862);
+  background-color: rgba(208, 60, 15, 0.862);
+}
+.card-link{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.telegram,.youtube,.discord,.twitch,.instagram{
+  border-radius: 8.0em;
+  width: 8%;
+  padding: 2px;
+}
+.Alert{
+  display: none;
+}
+.polosa{
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: block;
+}
+.num{
+  font-size: 23px;
+  font-weight: 300;
+  margin: 0.2%;
+  border: none;
+  background-color: rgb(252, 252, 252);
+}
+.selected-button{ background-color: black;
+  color: white;}
+  .nextCards,.prevCards{
+    font-size: 23px;
+    font-weight: 300;
+    margin: 0.2%;
+    border: none;
+    background-color: rgb(252, 252, 252);
+  }
+  .polosa{
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+/*Telephone*/
+@media (max-width: 767px) {
+  .ALLBUTTONS{
+    display: flex;  background-color: rgb(52, 49, 50);}
+    #randomq{
+      flex: 3;
+      margin: 0.2em;
+      color: white;
+      background-color: rgb(221, 72, 20);
+      border-color: rgb(221, 72, 20);
+    }
+    #showALL{
+      flex: 3;
+      margin: 0.2em;
+      font-family: var(--fontFam);
+      color: white;
+      background-color: rgb(221, 72, 20);
+      border-color: rgb(221, 72, 20);}
+      #butchange{
+        flex: 3;
+        margin: 0.2em;
+        font-family: var(--fontFam);
+        color: white;
+        background-color: rgb(221, 72, 20);
+        border-color: rgb(221, 72, 20);
+      }
+  
+  .mainh1head{
+    font-size: 1.6em;
+    padding-top: 0.2em;
+    padding-left: 0.3em;
+  }
+  .nav_menu {
+    display: block;
+    padding: 0.1875em;
+    background-color: rgb(52, 49, 49);
+    text-align: center;
+    display: none;
+  }
+  .subcategory-listhidden li {
+    margin-bottom: 0.625em;
+   
+  }
+  .subcategory-listhidden li a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(179, 179, 179, 0.2); 
+  }
+  .category-link:hover {
+    background-color: rgba(179, 179, 179, 0.2);
+  }
+  .category-list {
+    padding-left: 0;
+  }
+  .card-title {
+    font-size: 1em;
+  }
+  .card-description {
+    font-size: 0.75em;
+    margin-top: 1px;
+    margin-bottom: 2em;
+  }
+
+  .card-image img {
+    padding-left: 5%;
+    padding-right:5% ;
+    max-width: 90%;
+    height: auto;
+    border-radius: 1.5em;
+    margin-left: 0;
+  }
+  .nav1 {
+    padding: 1%;
+    border-radius: 1em 1em 0em 0em  ;
+  }
+  .card {
+    width: 100%;
+    max-width: 767px;
+    height: auto;
+    margin-left:0.1em;
+    margin-top: 0.2em;
+    background-color: rgb(231, 230, 232);
+    max-height: 100%;
+  }
+  .card-title {
+    font-size: 1.2em;
+  }
+  .card-description {
+    margin-top: 0.525em;
+    margin-bottom: 3em;
+  }
+  .openclosefiltr{
+    display: block;
+    flex: 1;
+    margin: 0.2em;
+    color: white;
+    background-color: rgb(221, 72, 20);
+    border-color: rgb(221, 72, 20);
+  }
+  footer {
+    text-align: center;
+    background-color: rgb(221, 72, 20);
+    padding: 0.0625em;
+    color: white;
+    border-radius: 0em 0em 1em 1em  ;
+  }
+  .favicon{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: auto;
+    width: 3em;
+    pointer-events: none;
+    left: 85%;
+  }
+  .favicon img {
+    width: 100%;
+    height: auto;
+  }
+  .selected{
+    display: none;
+  }
+  .unselected{
+    display: block;
+  }
+  .card-link{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .telegram,.youtube,.discord,.twitch,.instagram{
+    border-radius: 8.0em;
+    width: 35px;
+    padding: 2px;
+  }
+  .Alert{
+    display: none;
+  }
+  .polosa{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    display: block;
+  }
+  .num{
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0.7%;
+    border: none;
+    background-color: rgb(252, 252, 252);
+  }
+  
+  .selected-button{ 
+    background-color: black;
+    color: white;
+    font-size: 33px;
+    font-weight: 300;
+    margin: 0.7%;
+  }
+  .nextCards,.prevCards{
+    font-size: 21px;
+    font-weight: 300;
+    margin: 0.1%;
+    border: none;
+    background-color: rgb(252, 252, 252);
+  }
+  .polosa{
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+}
+@media(min-width: 1441px) {
+  
+  :root {
+    --fontFam: Georgia, 'Times New Roman', Times, serif;
+  }
+  .ALLBUTTONS{
+    display: flex;  
+    background-color: rgb(52, 49, 50);}
+    .containerALL {
+      background-color: #001019;
+      display: flex;
+    }
+  .containerALL {
+    background-color: #001019;
+    display: flex;
+  }
+  a {
+    text-decoration: none;
+    outline: none;
+    color: white;
+    font-family: var(--fontFam);
+  }
+  .nav1 {
+    background-color: rgb(221, 72, 20);
+    padding: 0.1875em; 
+    color: white;
+    text-align: left;
+    display: flex;
+  }
+  .mainh1head{
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+  }
+  #randomq{
+    flex: 1;
+    margin: 0.2em;
+    color: white;
+    background-color: rgb(221, 72, 20);
+    border-color: rgb(221, 72, 20);
+  }
+  #butchange{
+    flex: 1;
+    margin: 0.2em;
+    font-family: var(--fontFam);
+    color: white;
+    background-color: rgb(221, 72, 20);
+    border-color: rgb(221, 72, 20);
+  }
+  .information {
+    flex: 4;
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav_menu {
+    flex: 1;
+    padding: 0.1875em; 
+    background-color: rgb(52, 49, 49);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .subcategory-listhidden {
+    list-style: none;
+    padding: 0;
+  }
+  .subcategory-listhidden li {
+    text-decoration: none;
+    margin-bottom: 0.625em; 
+  }
+  .subcategory-listhidden li a {
+    color: rgb(179, 179, 179);
+    text-decoration: none;
+    text-shadow: 0 0 2px rgba(179, 179, 179, 0.2);
+  }
+  .category-link:hover {
+    text-decoration: none;
+    background-color: rgba(179, 179, 179, 0.2);
+  }
+  .category-list{
+  padding-left: 0;
+  }
+  .category-list li {
+    list-style: none;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    padding: 10px 0 10px 0;
+  }
+  footer {
+    text-align: center;
+    background-color: rgb(221, 72, 20);
+    padding: 0.0625em; 
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+  .card {
+    width: 100%;
+    max-width: 400px;
+    max-height: 60%;
+    margin: 0.5em;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgb(231, 230, 232);
+    position: relative;
+  }
+  .card-image {
+    width: 200px;
+    padding-top: 0.75em;
+    display: flex;
+  }
+  .card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1em;
+    margin-left: 55%;
+  }
+  .card-content {
+    padding: 10px;
+  }
+  .card-title {
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+  .card-description {
+    margin-top: 10px;
+    margin-bottom: 2em;
+  }
+  .card-link {
+    margin-top: 1em;
+  }
+  .card-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .favicon{
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    height: auto;
+    width: 3em;
+    pointer-events: none;
+    left: 85%;
+  }
+  .favicon img {
+    width: 100%;
+    height: auto;
+  
+  }
+  .card:hover .unselected{
+    display: block;
+  } 
+  .selected{
+    display: none;
+  }
+  .unselected{
+    display: none;
+  }
+  .openclosefiltr{display: none;}
+  #showALL{
+    flex: 1;
+    margin: 0.2em;
+    padding: 0.6em;
+    font-family: var(--fontFam);
+    color: white;
+    background-color: rgb(221, 72, 20);
+    border-color: rgb(221, 72, 20);}
+    #randomq{
+      flex: 1;
+      margin: 0.2em;
+      padding: 0.6em;
+      color: white;
+      background-color: rgb(221, 72, 20);
+      border-color: rgb(221, 72, 20);
+    }
+    #butchange{
+      flex: 1;
+      margin: 0.2em;
+      padding: 0.6em;
+      font-family: var(--fontFam);
+      color: white;
+      background-color: rgb(221, 72, 20);
+      border-color: rgb(221, 72, 20);
+    }
+    #randomq:hover,#butchange:hover,#showALL:hover {
+      border-color: rgba(208, 60, 15, 0.862);
+      background-color: rgba(208, 60, 15, 0.862);
+    }
+    .card-link{
+      position:absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+    .telegram,.youtube,.discord,.twitch,.instagram{
+      border-radius: 8.0em;
+      width: 8%;
+      padding: 2px;
+    }
+    .Alert{
+      display: none;
+    }
+    .polosa{
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      display: block;
+    }
+    .num{
+      font-size: 23px;
+      font-weight: 300;
+      margin: 0.2%;
+      border: none;
+      background-color: rgb(252, 252, 252);
+    }
+    .selected-button{ 
+      background-color: black;
+      color: white;}
+    .nextCards,.prevCards{
+      font-size: 23px;
+      font-weight: 300;
+      margin: 0.2%;
+      border: none;
+      background-color: rgb(252, 252, 252);
+    }
+    .polosa{
+      padding-top: 3%;
+      padding-bottom: 3%;
+    }
+}
